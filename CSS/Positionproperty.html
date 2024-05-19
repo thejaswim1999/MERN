@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            height:100px;
+            width:100px;
+            border: 2px solid;
+            padding: 10px;
+        }
+        .parent-cont{
+            height: 500px;
+            width: 500px;
+            background-color: lightcoral;
+            /* position: absolute; */
+        }
+        child{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+        }
+        #one{
+            background-color: blueviolet;
+            /* position: static; */
+        }
+        #t{
+            background-color: rgb(74, 171, 98);
+            /* position: relative; */
+            /* left: 100px;
+            top: 200px; */
+        }
+        /* Absolute */
+        /* FIXED IS BEHIND ABSOLUTE */
+        #th{
+            background-color: rgb(108, 55, 156);
+            /* position: absolute; */
+            /* top: 100px;
+            left: 100px; */
+        }
+        #f{
+            background-color: aquamarine;
+            /* position: fixed; */
+        }
+        #fi{
+            background-color: rgb(250, 186, 25);
+            position: sticky;
+            top: 100px;
+            left:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-cont">
+        <div class="box" id="one">1</div>
+        <div class="box" id="t">2</div>
+        <div class="box" id="th">Absolute</div>
+        <div class="box" id="f">fixed</div>
+        <div class="box" id="fi">sticky</div>
+        <!-- <div class="box" id="si">6</div> -->
+    </div>
+    <div style="height:300vh; background-color: blueviolet;"></div>
+</body>
+</html>
