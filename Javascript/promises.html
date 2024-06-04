@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function task1(raw){
+    let pr1=new Promise((resolve,reject)=>{
+        if(raw!=undefined){
+            setTimeout(()=>{
+                resolve("task1 is ready");
+            },2000)
+        }else{
+            reject("task1 Not Ready");
+        }
+    })
+    return pr1;
+}
+function task2(raw){
+    let pr1=new Promise((resolve,reject)=>{
+        if(raw!=undefined){
+            setTimeout(()=>{
+                resolve("task2 is ready");
+            },2000)
+        }else{
+            reject("task2 Not Ready");
+        }
+    })
+    return pr1;
+}
+function task3(raw){
+    let pr1=new Promise((resolve,reject)=>{
+        if(raw!=undefined){
+            setTimeout(()=>{
+                resolve("task3 is ready");
+            },2000)
+        }else{
+            reject("task3 Not Ready");
+        }
+    })
+    return pr1;
+}
+// console.log("Start");
+// task1("ta").then((res)=>{
+//     console.log("Task1 is completed")
+//     return task2(res);
+// }).then((res2)=>{
+//     console.log("task2 is completd");
+//     return task3(res2)
+// }).then((res3)=>{
+//     console.log("task3 is completd");
+//     return task3(res3)
+// }).catch(function(err){
+//     console.log(err);
+// })
+
+// makemaggie().then((res)=>{
+//     console.log("Fulfilled",res);
+// }).catch((err)=>{
+//     console.log("Reject",err);
+// })
+// console.log("End");
+
+//Async //Await 
+console.log("Start");
+async function abc(){
+    try{
+    let ans1=await task1("refd")
+    console.log(ans1);
+    let ans2=await task2(ans1);
+    console.log(ans2);
+    let ans3=await task3(ans2);
+    console.log(ans3);
+    }catch(err){
+        console.log(err)
+    }
+}
+abc();
+console.log("End");
+    </script>
+</body>
+</html>

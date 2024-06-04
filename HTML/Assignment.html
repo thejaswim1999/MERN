@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+<style>
+    .items{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .items{
+        height: 50vh;
+        width: 50vw;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin: 10vh;
+        /* gap: 10; */
+        border: 2px solid;
+    }
+    .shape{
+        height: 90vh;
+        background-color: antiquewhite;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .square{
+        height:100px;
+        width:100px;
+        border: 1px solid;
+    }
+    .circle{
+        height:100px;
+        width:100px;
+        border: 1px solid;
+        border-radius: 50px;
+    }
+</style>
+</head>
+<body>
+    <div class="items">
+        <input id="inputtag" type="number">
+        <input id ="circle" name="shape" type="radio">Circle</input> 
+        <input id ="square" name="shape" type="radio">Square</input> 
+        <input id="color" type="color">
+        <input id="submit" type="submit">
+    </div>
+    <div class="shape"></div>
+    <script src="./Assignmentlink.js"></script>
+</body>
+</html>

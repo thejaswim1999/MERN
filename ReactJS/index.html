@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+       <div class="parent">
+        Parent
+        <div class="child">
+        Child
+        <h1>GrandChild</h1>
+        </div>
+       <div class="child">
+        Child
+        <h1>Grandchildren2</h1>
+       </div>
+    </div>
+    </div>
+let reactele=React.createElement("Parent",{},"This is react Element");
+
+</body>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+    // let reactele=React.createElement("h1",{},"This is react Element");
+    // console.log(reactele)
+    
+    let reactele=React.createElement("div",{className:"parent"},"parent",React.createElement("div",{className:"child"},"child",React.createElement("h1",{},"GRCH1")),;
+
+
+
+    let root=ReactDOM.createRoot(document.getElementById("root"))
+    root.render(reactele)
+</script>
+</html>         
